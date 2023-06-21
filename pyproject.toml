@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mcc"
+version = "0.1.0"
+description = ""
+authors = ["Paul Burt <paul.burt@bbc.co.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+duckdb = "^0.8.1"
+tinybird-cli = "^1.0.0b348"
+
+[tool.pyright]
+venv = ".venv"
+venvPath = "."
+
+[tool.pyright.analysis]
+typeCheckingMode = "strict"
+
+[tool.black]
+line-length = 88
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
