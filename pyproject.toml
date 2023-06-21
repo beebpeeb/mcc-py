@@ -1,16 +1,16 @@
 [tool.poetry]
 name = "mcc"
 version = "0.1.0"
-description = ""
+description = "Data experimentation"
 authors = ["Paul Burt <paul.burt@bbc.co.uk>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.12"
+python = "^3.11"
 duckdb = "^0.8.1"
 polars = "^0.18.3"
-pyarrow = "^12.0.1"
 prefect = "^2.10.16"
+pyarrow = "^12.0.1"
 
 [tool.pyright]
 venv = ".venv"
